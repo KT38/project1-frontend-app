@@ -12,60 +12,55 @@
         <span>ここにファイルをドラッグしてください</span>
         <div id='thumb'></div>
     </div>
-    <form>
+    <form name="ranges">
       <div id="div-ranges">
         <div class="div-range">
           <label for="grayscale">grayscale:モノクロ</label>
-          <input type="range" id="grayscale" value="0" min="0" max="100" data-unit="%">
+          <input type="range" name="grayscale" id="grayscale" value="0" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="sepia">sepia:セピア</label>
-          <input type="range" id="sepia" value="0" min="0" max="100" data-unit="%">
+          <input type="range" name="sepia" id="sepia" value="0" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="saturate">saturate:彩度</label>
-          <input type="range" id="saturate" value="100" min="0" max="100" data-unit="%">
+          <input type="range" name=saturate"" id="saturate" value="100" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="hue-rotate">hue-rotate:色相回転</label>
-          <input type="range" id="hue-rotate" value="0" min="0" max="360" data-unit="deg">
+          <input type="range" name="hue-rotate" id="hue-rotate" value="0" min="0" max="360" data-unit="deg">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="invert">invert:階調反転</label>
-          <input type="range" id="invert" value="0" min="0" max="100" data-unit="%">
+          <input type="range" name="invent" id="invert" value="0" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="opacity">opacity:透過度</label>
-          <input type="range" id="opacity" value="100" min="0" max="100" data-unit="%">
+          <input type="range" name="opacity" id="opacity" value="100" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="brightness">brightness:明るさ</label>
-          <input type="range" id="brightness" value="100" min="0" max="100" data-unit="%">
+          <input type="range" name="brightness" id="brightness" value="100" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="contrast">contrast:コントラスト</label>
-          <input type="range" id="contrast" value="100" min="0" max="100" data-unit="%">
+          <input type="range" name="contrast" id="contrast" value="100" min="0" max="100" data-unit="%">
           <span class="current-value"></span>
         </div>
         <div class="div-range">
           <label for="blur">blur:ぼかし</label>
-          <input type="range" id="blur" value="0" min="0" max="50" data-unit="px">
-          <span class="current-value"></span>
-        </div>
-        <div class="div-range">
-          <label for="drop-shadow">drop-shadow:影</label>
-          <input type="range" id="drop-shadow" value="0" min="0" max="50" data-unit="px 0px 10px #000">
+          <input type="range" name="blur" id="blur" value="0" min="0" max="50" data-unit="px">
           <span class="current-value"></span>
         </div>
         <div class="button">
-          <button onclick="OpenWindow()">完成</button>
+          <input type="button" value="完成" onclick = "OpenWindow()">          
         </div>
       </div>
     </form>

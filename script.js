@@ -73,14 +73,6 @@ function createThumbnail(dataUrl, callback) {
   }
   image.src = dataUrl;
 
-/*
-  //セレクトボックスの値を#thumbのクラスに割り当て
-  $('[name=selectBox]').change(function() 
-  {
-    var val = $('[name=selectBox]').val();
-    $("#thumb").removeClass().addClass(val);
-  })
-*/
 //レンジの値の反映
   $('input[type="range"]').change(function() {
     var range = this;
@@ -106,7 +98,12 @@ function createThumbnail(dataUrl, callback) {
 
 //新規ウィンドウに出力
 function OpenWindow(){
-    window.open("sorce.html","source","width=500px,height=550px,resizable=yes,scrollbars=yes");
+  window.open("","result","width=650px,height=500px,resizable=yes,scrollbars=yes");
+  var form = document.ranges;
+  form.action = 'result.php';
+  form.target = 'result';
+  form.method = 'post';
+  form.submit();
 }
 
 
