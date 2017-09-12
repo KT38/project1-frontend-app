@@ -10,5 +10,20 @@ $brightness = $_POST['brightness'];
 $contrast = $_POST['contrast'];
 $blur = $_POST['blur'];
 
-//
+//出力
+print
+"
+img{ <br>
+&emsp; filter: grayscale(".$grayscal."%)<br>
+&emsp;        sepia(".$sepia."%)<br>
+&emsp;        saturate(".$saturate."%)<br>
+&emsp;        hue-rotate(".$hue_rotate."deg)<br>
+&emsp;        invent(".$invent."%)<br>
+&emsp;        opacity(".$opacity."%)<br>
+&emsp;        brightness(".$brightness."%)<br>
+&emsp;        contrast(".$contrast."%)<br>
+&emsp;        blur(".$blur."px);<br>
+}
+"
+
 ?>

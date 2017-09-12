@@ -26,7 +26,6 @@ function onDropFile(event) {
   $span.empty();
   var reader = new FileReader();
   reader.onload = function(e) {
-    // オリジナルの画像データ(data:image/jpeg;base64,xxxxx形式の文字列)
     var dataUrl = e.target.result;
  
     createThumbnail(dataUrl, function(thumbnail) {
@@ -45,7 +44,7 @@ function createThumbnail(dataUrl, callback) {
  
   var image = new Image();
   image.onload = function() {
-    //画像がはみださないようにサイズ調整
+    //画像の縮小
     var maxSize = Math.max(thumbAreaWidth, thumbAreaHeight);
     var w = image.width;
     var h = image.height;
